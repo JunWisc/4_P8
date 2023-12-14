@@ -1,11 +1,3 @@
-# Data Cleanup
-
-We've already created `hdma-wi-2021.parquet` for you.  If you're
-curious how, see the code below.  Among other cleanup work, we skip
-some loans because of missing data (for example, no income) or because
-of outliers (for example, properties over $10 million).
-
-```python
 import pandas as pd
 columns = {
     "state_code": "string",
@@ -27,4 +19,3 @@ df = df[(df["loan_amount"] < 10000000) &
         (df["loan_term"].isin([120, 180, 240, 360]))]
 df.drop(columns=["action_taken"])
 df.to_parquet("hdma-wi-2021.parquet")
-```
