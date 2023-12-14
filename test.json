@@ -1,10 +1,10 @@
 {
-  "score": 70,
+  "score": 80,
   "full_score": 100,
   "tests": {
     "q1": "PASS (10/10)",
     "q2": "PASS (10/10)",
-    "q3": "Wrong answer",
+    "q3": "PASS (10/10)",
     "q4": "PASS (10/10)",
     "q5": "Wrong answer",
     "q6": "PASS (10/10)",
